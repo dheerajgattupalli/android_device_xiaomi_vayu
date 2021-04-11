@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),cepheus)
+ifeq ($(TARGET_DEVICE),vayu)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

@@ -15,8 +15,8 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "android.hardware.light@2.0-service.cepheus",
-    init_rc: ["android.hardware.light@2.0-service.cepheus.rc"],
+    name: "android.hardware.light@2.0-service.vayu",
+    init_rc: ["android.hardware.light@2.0-service.vayu.rc"],
     srcs: [
         "service.cpp",
          "Light.cpp",
