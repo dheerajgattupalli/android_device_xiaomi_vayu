@@ -18,7 +18,7 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/cepheus
+DEVICE_PATH := device/xiaomi/vayu
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_USES_NETWORK := true
@@ -27,7 +27,7 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
 # Inherit from proprietary files
-include vendor/xiaomi/cepheus/BoardConfigVendor.mk
+include vendor/xiaomi/vayu/BoardConfigVendor.mk
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -48,7 +48,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a9
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := cepheus
+TARGET_OTA_ASSERT_DEVICE := vayu,bhima
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -71,7 +71,7 @@ TARGET_USE_QTI_BT_STACK := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := cepheus
+TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
 
 # Camera
@@ -94,7 +94,7 @@ TARGET_ENABLE_MEDIADRM_64 := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.cepheus
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.vayu
 TARGET_USES_FOD_ZPOS := true
 
 # HIDL
@@ -103,8 +103,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/c2_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_cepheus
-TARGET_RECOVERY_DEVICE_MODULES := libinit_cepheus
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_vayu
+TARGET_RECOVERY_DEVICE_MODULES := libinit_vayu
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -116,7 +116,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CONFIG := cepheus_defconfig
+TARGET_KERNEL_CONFIG := vayu_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000

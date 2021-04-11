@@ -15,9 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_cepheus.mk
+    $(LOCAL_DIR)/lineage_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_cepheus-user \
-    havoc_cepheus-userdebug \
-    havoc_cepheus-eng
+    lineage_vayu-userdebug \
+    lineage_vayu-eng

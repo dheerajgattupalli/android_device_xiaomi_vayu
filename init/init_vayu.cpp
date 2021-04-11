@@ -75,11 +75,11 @@ void set_ro_product_prop(const std::string &prop, const std::string &value) {
 };
 
 void vendor_load_properties() {
-    set_ro_product_prop("device", "cepheus");
-    set_ro_product_prop("model", "MI 9");
-    set_ro_product_prop("name", "cepheus");
-    set_ro_build_prop("fingerprint", "Xiaomi/cepheus/cepheus:11/RKQ1.200826.002/21.3.10:user/release-keys");
+    set_ro_product_prop("device", "vayu");
+    set_ro_product_prop("model", "Poco X3 Pro");
+    set_ro_product_prop("name", "vayu");
+    set_ro_build_prop("fingerprint", "Xiaomi/vayu/vayu:11/RKQ1.200826.002/V12.0.4.0:user/release-keys");
 
     // description
-    property_override("ro.build.description", "cepheus-user 11 RKQ1.200826.002 21.3.10 release-keys");
+    property_override("ro.build.description", "vayu-user 11 RKQ1.200826.002 V12.0.4.0 release-keys");
 }

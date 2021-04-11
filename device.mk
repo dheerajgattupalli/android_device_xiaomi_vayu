@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/cepheus/cepheus-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vayu/vayu-vendor.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -190,7 +190,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.cepheus
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.vayu
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
@@ -271,12 +271,12 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.cepheus
+    android.hardware.light@2.0-service.vayu
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service.cepheus
+    vendor.lineage.livedisplay@2.0-service.vayu
 
 # Media
 PRODUCT_PACKAGES += \
