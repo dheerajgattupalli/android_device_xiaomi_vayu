@@ -188,14 +188,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.sf.blurs_are_expensive=1
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.vayu
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/havoc/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
 # Fstab
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
@@ -236,8 +228,8 @@ PRODUCT_PACKAGES += \
     IFAAService \
     org.ifaa.android.manager
 
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+#PRODUCT_BOOT_JARS += \
+#    org.ifaa.android.manager
 
 # Init scripts
 PRODUCT_COPY_FILES += \

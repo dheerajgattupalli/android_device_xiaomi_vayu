@@ -49,7 +49,6 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 persist.mm.enable.prefetch=true
 
 # Mlipay
-ro.hardware.fp.fod=true
 persist.vendor.sys.pay.ifaa=1
 
 # Additional buffers shared between Camera and Video

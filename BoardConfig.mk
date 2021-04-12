@@ -93,10 +93,6 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.vayu
-TARGET_USES_FOD_ZPOS := true
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/c2_manifest.xml
